@@ -1,6 +1,9 @@
 # CSS to the Rescue Process
 **@cmda-minor-web** 2020 - 2021
 
+# Opdracht
+Bij dit vak ga ik alle hoeken van CSS bekijken. Met pure CSS ga ik een menukaart visualiseren en een print stylesheet in elkaar zetten. Door dit vak hoop ik beter te worden met CSS, met bijvoorbeeld selectoren clip-paths en animaties etc. 
+
 # Week 1
 ## Kennismaking
 Deze week ben ik begonnen met een kennismaking opdracht. Hierbij moest het team onderzoek doen naar een specifieke techniek/onderwerp. Mijn team had als onderwerp *effecten*. Hieronder vallen bijvoorbeeld blend-modes, clip-paths en filters. Binnen deze onderwerpen ben ik vooral gaan kijken naar de blend-modes en filters.
@@ -65,7 +68,7 @@ Ook heb je in CSS clip paths. Hier zijn handige generators voor te vinden online
 
 ## Start aan eindopdracht
 ### Contexten en restricties
-na de kennismaking ben ik gaan brainstormen over mijn concept. Al snel wist ik dat ik de menu kaart ga vormgeven, en dat ik dit ga doen met **2 kleuren** en **prefers-color-scheme**, de tweede restrictie moet ik nog bepalen. De twee kleuren vind ik zelf een leuke uitdaging, en zie ik veel kansen in het gebruiken van blend-modes en filters. De prefers-color-scheme heb ik gekozen omdat ik dit een interessant element vind om meer over te weten te komen. Ik verwacht dit later ook veel toe te gaat passen op eigen projecten.
+na de kennismaking ben ik gaan brainstormen over mijn concept. Al snel wist ik dat ik de menu kaart ga vormgeven, en dat ik dit ga doen met **2 kleuren** en **print- stylesheet**, de tweede restrictie moet ik nog bepalen. De twee kleuren vind ik zelf een leuke uitdaging, en zie ik veel kansen in het gebruiken van blend-modes en filters. De print stylesheet heb ik gekozen omdat ik dit een interessant element vind om meer over te weten te komen, en daarbij past het ook goed bij het onderwerp.
 
 ### Concept
-Mijn vormgeving ga ik baseren op de stijl van Mondriaan. Hiervoor zie ik veel animatie mogelijkheden en layout uitdaging. Daarbij sluit dit ook nog eens goed aan op mijn restrictie van twee kleuren. Ik ben van plan de interactie uit te werken met veel hover states en animaties. Hierbij wil ik dat de pagina eruit ziet als een mondriaan wanneer je binnenkomt, maar veranderd in een menukaart bij verschillende hovers en andere triggers.
+Mijn vormgeving ga ik baseren op de stijl van een krijtbord. Hiervoor heb ik gekozen omdat je vaak bij restaurants buiten een krijtbord ziet staan, en het dus goed bij een restaurant style past. Daarbij geeft het ook heel veel uitdaging om het met css te maken, omdat het niet allemaal rechttoe rechtaan is in de stijl van  een krijtbord. Alles is net even anders en dit geeft mij mogelijkheden om te experimenteren met verschillende technieken. Daarnaast lijkt het mij leuk om mezelf uit te dagen om een origineel statisch voorwerp dynamischer te maken en interactief te maken door de mogelijkheden die CSS te bieden heeft.
