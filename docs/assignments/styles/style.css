@@ -5,54 +5,29 @@
     --black: rgb(0, 0, 0);
 }
 
+@font-face { font-family: Chalk; src: url(chalktype.ttf); } 
+
 * {
+    font-family: Chalk, serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: var(--black);
+    color: var(--white);
+    background-color: var(--black);
 }
 
 header {
     position: relative;
-    background-color: var(--white);
 }
 
-header::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--primary);
-    transition: all 2s ease-in-out;
-}
+header h1 * {
+    background-image: url(../img/chalk.jpg);
+    /* Change URL to texture file name */
+    background-repeat: repeat;
+    background-position: center center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-header:hover::before {
-    top: 100%;
-}
-
-article div {
-    position: relative;
-    background-color: var(--white);
-    width: fit-content;
-}
-
-article div::before {
-    content: '€';
-}
-
-article div::after {
-    position: absolute;
-    content: ',-';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--black);
-    transition: all .5s ease-in-out;
-}
-
-article div:hover::after {
-    left: 100%;
+    font-weight: 800;
+    font-size: 3em;
 }
