@@ -1,0 +1,58 @@
+:root {
+    --primary: rgb(255, 0, 0);
+    --secondary: rgb(0, 0, 255);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--black);
+}
+
+header {
+    position: relative;
+    background-color: var(--white);
+}
+
+header::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary);
+    transition: all 2s ease-in-out;
+}
+
+header:hover::before {
+    top: 100%;
+}
+
+article div {
+    position: relative;
+    background-color: var(--white);
+    width: fit-content;
+}
+
+article div::before {
+    content: '€';
+}
+
+article div::after {
+    position: absolute;
+    content: ',-';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    transition: all .5s ease-in-out;
+}
+
+article div:hover::after {
+    left: 100%;
+}
