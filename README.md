@@ -3,6 +3,12 @@
 
 # Opdracht
 Bij dit vak ga ik alle hoeken van CSS bekijken. Met pure CSS ga ik een menukaart visualiseren en een print stylesheet in elkaar zetten. Door dit vak hoop ik beter te worden met CSS, met bijvoorbeeld selectoren clip-paths en animaties etc. 
+## Live link
+[Check hier de site](https://rickgroot.github.io/css-to-the-rescue-2021/docs/assignments/menu.html)
+
+# Week 2
+## Header
+
 
 # Week 1
 ## Kennismaking
@@ -68,7 +74,7 @@ Ook heb je in CSS clip paths. Hier zijn handige generators voor te vinden online
 
 ## Start aan eindopdracht
 ### Contexten en restricties
-na de kennismaking ben ik gaan brainstormen over mijn concept. Al snel wist ik dat ik de menu kaart ga vormgeven, en dat ik dit ga doen met **2 kleuren** en **print- stylesheet**, de tweede restrictie moet ik nog bepalen. De twee kleuren vind ik zelf een leuke uitdaging, en zie ik veel kansen in het gebruiken van blend-modes en filters. De print stylesheet heb ik gekozen omdat ik dit een interessant element vind om meer over te weten te komen, en daarbij past het ook goed bij het onderwerp.
+na de kennismaking ben ik gaan brainstormen over mijn concept. Al snel wist ik dat ik de menu kaart ga vormgeven, en dat ik dit ga doen met **2 kleuren**, **responsive zonder media-queries** en een **print- stylesheet**. De twee kleuren vind ik zelf een leuke uitdaging, en zie ik veel kansen in het gebruiken van blend-modes en filters. Responsive zonder media-queries is een uitdaging waarbij ik veel ga leren, omdat er veel mogelijkheden zijn voor responsive design waar ik niet vanaf weet. De print stylesheet heb ik gekozen omdat ik dit een interessant element vind om meer over te weten te komen, en daarbij past het ook goed bij het onderwerp.
 
 ### Concept
 Mijn vormgeving ga ik baseren op de stijl van een krijtbord. Hiervoor heb ik gekozen omdat je vaak bij restaurants buiten een krijtbord ziet staan, en het dus goed bij een restaurant style past. Daarbij geeft het ook heel veel uitdaging om het met css te maken, omdat het niet allemaal rechttoe rechtaan is in de stijl van  een krijtbord. Alles is net even anders en dit geeft mij mogelijkheden om te experimenteren met verschillende technieken. Daarnaast lijkt het mij leuk om mezelf uit te dagen om een origineel statisch voorwerp dynamischer te maken en interactief te maken door de mogelijkheden die CSS te bieden heeft.
