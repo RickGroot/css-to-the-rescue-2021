@@ -75,6 +75,53 @@ header h1 span:last-child::after {
     background-color: var(--primary);
 }
 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    margin: 50px auto;
+}
+
+ul li {
+    position: relative;
+    padding: 5px;
+}
+
+ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--primary);
+}
+
+ul li:hover::after {
+    width: 100%;
+}
+
+ul li a {
+    color: inherit;
+    text-decoration: inherit;
+    font-size: 1.5em;
+}
+
+section:not(section:target) {
+    display: none;
+}
+
+main:target section {
+    display: flex;
+}
+
+
+
 section {
     display: flex;
     flex-direction: row;
