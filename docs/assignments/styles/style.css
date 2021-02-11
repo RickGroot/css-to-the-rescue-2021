@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
-@font-face { font-family: Chalk; src: url(chalktype.ttf); } 
+
+@font-face {
+    font-family: Chalk;
+    src: url(chalktype.ttf);
+}
 
 :root {
-    --primary: rgb(175,82,92);
-    --secondary: rgb(92,141,170);
+    --primary: rgb(175, 82, 92);
+    --secondary: rgb(92, 141, 170);
     --white: rgb(255, 255, 255);
     --black: rgb(46, 46, 46);
     --padding-side: 5vw;
@@ -20,23 +24,30 @@
     overflow-x: hidden;
 }
 
+main {
+    margin-top: 20vh;
+}
+
 body {
     background-color: var(--black);
     padding: 0 var(--padding-side);
 }
 
-body > header {
+body>header {
     position: relative;
     width: calc(100vw - var(--padding-side) * 2);
     text-align: center;
-    margin: 30vh 0;
+    margin-top: 30vh;
+    max-height: 100vh;
 }
 
-body > header p {
+body>header p {
     font-size: 2em;
 }
 
-h1 *, h2, h3 {
+h1 *,
+h2,
+h3 {
     position: relative;
     font-family: Chalk, serif;
     font-weight: 800;
@@ -45,7 +56,6 @@ h1 *, h2, h3 {
 
 header h1 * {
     background-image: url(../img/chalk.jpg);
-    /* Change URL to texture file name */
     background-repeat: repeat;
     background-position: center center;
     -webkit-background-clip: text;
@@ -83,32 +93,31 @@ ul {
     align-items: center;
     width: 30vw;
     margin: 50px auto;
+    margin-top: 10vh;
 }
 
 ul li {
     position: relative;
     padding: 5px;
+    height: auto;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, var(--primary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0em;
+    background-position: 0 50%;
+    transition: background-image 0.2s ease-in, background-size 0.2s ease-in;
 }
 
-ul li::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0;
-    height: 5px;
-    border-radius: 5px;
-    background-color: var(--primary);
-}
-
-ul li:hover::after {
-    width: 100%;
+ul li:hover {
+    background-image: linear-gradient(120deg);
+    background-size: 100% 100%;
 }
 
 ul li a {
     color: inherit;
     text-decoration: inherit;
+    text-align: center;
+    line-height: 100%;
     font-size: 1.5em;
 }
 
@@ -120,26 +129,98 @@ main:target section {
     display: flex;
 }
 
-
-
 section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 10vh;
 }
 
 section header,
-section > h2,
 section blockquote {
     flex: 0 0 100%;
     text-align: center;
+    overflow: visible;
+}
+
+section header h2 {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+    background-color: var(--primary);
+    width: fit-content;
+    height: auto;
+    min-width: 7em;
+    margin: auto;
+    padding: 5px;
+    outline: 2px solid var(--black);
+    filter: drop-shadow(0 4px 3px rgb(22, 22, 22));
+}
+
+section:nth-child(2n + 1) header h2 {
+    background-color: var(--secondary);
+}
+
+section header h2::before,
+section h2::before,
+section header h2::after,
+section h2::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 25%;
+    width: 20%;
+    background-color: inherit;
+    z-index: -1;
+    box-shadow: inherit;
+}
+
+section header h2::before,
+section h2::before {
+    right: 95%;
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+section header h2::after,
+section h2::after {
+    left: 95%;
+    clip-path: polygon(0 0, 100% 0, 50% 50%, 100% 100%, 0 100%);
+}
+
+section blockquote {
+    margin-top: 5vh;
 }
 
 section article {
-    width: 400px;
-    height: 200px;
+    margin: 5vw;
+    position: relative;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    overflow: visible;
+}
+
+article h3 {
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+article p {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+article div {
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: end;
 }
 
 article div {
