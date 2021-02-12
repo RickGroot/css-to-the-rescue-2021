@@ -7,8 +7,14 @@ Bij dit vak ga ik alle hoeken van CSS bekijken. Met pure CSS ga ik een menukaart
 [Check hier de site](https://rickgroot.github.io/css-to-the-rescue-2021/docs/assignments/menu.html)
 
 # Week 2
-## Header
+## Interaction
+In deze week ben ik aan de gang gegaan met interaction. Hiervoor heb ik veel gebruik gemaakt van de **:target** selector. Wanneer je via een link naar een bepaalde id in je HTML gaat, kan je het gelinkte blok stijlenn met de :target. Op deze mannier is het mogelijk om een bepaald stuk tekst te highlighten wanneer je daar naartoe navigeert. In mijn geval gebruik ik deze selector om alles wat niet getarget wordt weg te halen. Op deze manier kan ik een werkende navigatie maken met pure CSS.
 
+## Layout
+De layout doe ik met behulp van **display: flex** en **display: grid**. Alle artiklen met gerechten zet ik door middel van flex naast elkaar en laat ik wrappen naar een volgende kolom. Ik heb dit met flex gedaan omdat je op die manier makkelijker een responsive layout kan maken zonder media queries. Vervolgens heb ik in de articles een grid toegepast. Deze hoeven minder responsive te zijn omdat de articles van zichzelf al klein zijn. Op deze manier kan ik een simpel grid toepassen waarmee alles op een nette manier uitgelijnd kan worden.
+
+## Banners
+Ook ben ik banners gaan maken voor de categorieën. Door de banners heeft de menukaart wat meer kleur en ziet het er minder saai uit. De banners heb ik gemaakt door middel van **::before** en **::after**. Ik heb de pseudo elementen absoluut gepositioneerd, en net buiten het blok met een z-index van -1. Op deze manier staan de blokken naast en onder de container. Daarna ben ik doorm middel van **clip-path** een vorm gaan maken. Omdat shadows niet goed werken op clip-paths heb ik het hoofd element een border gegeven. Op die manier is er toch nog een diepte effect.
 
 # Week 1
 ## Kennismaking
