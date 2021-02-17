@@ -2,9 +2,10 @@
 **@cmda-minor-web** 2020 - 2021
 
 # Opdracht
-Bij dit vak ga ik alle hoeken van CSS bekijken. Met pure CSS ga ik een menukaart visualiseren en een print stylesheet in elkaar zetten. Door dit vak hoop ik beter te worden met CSS, met bijvoorbeeld selectoren clip-paths en animaties etc. 
+Bij dit vak ga ik alle hoeken van CSS bekijken. Met pure CSS ga ik een menukaart visualiseren en een print stylesheet in elkaar zetten. Door dit vak hoop ik beter te worden met CSS, met bijvoorbeeld selectoren clip-paths en animaties etc. [Beoordelingsformulier](https://rickgroot.github.io/css-to-the-rescue-2021/docs/beoordeling/beoordelingsformulier.html) van deze course.
+
 ## Live link
-[Check hier de site](https://rickgroot.github.io/css-to-the-rescue-2021/docs/assignments/menu.html)
+[Check hier de site](https://rickgroot.github.io/css-to-the-rescue-2021/menu.html)
 
 # Week 2
 ## Interaction
