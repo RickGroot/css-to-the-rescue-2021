@@ -7,6 +7,12 @@ Bij dit vak ga ik alle hoeken van CSS bekijken. Met pure CSS ga ik een menukaart
 ## Live link
 [Check hier de site](https://rickgroot.github.io/css-to-the-rescue-2021/menu.html)
 
+# Week 3
+## Responsiveness
+Deze week ben ik begonnen met responsive design. Hier was ik al wat mee begonnen omdat de gerechten met flex naast elkaar staan, maar alles moet nog in elk formaat kunnen vallen. Om dit te doen heb ik onderzoek gedaan naar verschillende methoden zoals clamp en minmax.
+
+## Print stylesheet
+
 # Week 2
 ## Interaction
 In deze week ben ik aan de gang gegaan met interaction. Hiervoor heb ik veel gebruik gemaakt van de **:target** selector. Wanneer je via een link naar een bepaalde id in je HTML gaat, kan je het gelinkte blok stijlenn met de :target. Op deze mannier is het mogelijk om een bepaald stuk tekst te highlighten wanneer je daar naartoe navigeert. In mijn geval gebruik ik deze selector om alles wat niet getarget wordt weg te halen. Op deze manier kan ik een werkende navigatie maken met pure CSS.

@@ -1,3 +1,4 @@
+/* ----------------------------------------------------------------- Imports and variables */
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 
 @font-face {
@@ -13,6 +14,7 @@
     --padding-side: 5vw;
 }
 
+/* ----------------------------------------------------------------- Global styling */
 * {
     font-family: 'Hachi Maru Pop', cursive;
     padding: 0;
@@ -31,18 +33,6 @@ body {
     padding: 0 var(--padding-side);
 }
 
-body>header {
-    position: relative;
-    width: calc(100vw - var(--padding-side) * 2);
-    text-align: center;
-    margin-top: 30vh;
-    max-height: 100vh;
-}
-
-body>header p {
-    font-size: 2em;
-}
-
 h1 *,
 h2,
 h3 {
@@ -50,6 +40,19 @@ h3 {
     font-family: Chalk, serif;
     font-weight: 800;
     text-transform: uppercase;
+}
+
+/* ----------------------------------------------------------------- Main header styling */
+body>header {
+    position: relative;
+    width: clamp(50%, calc(100vw - var(--padding-side) * 2), 100%);
+    text-align: center;
+    margin-top: 30vh;
+    max-height: 100vh;
+}
+
+body>header p {
+    font-size: clamp(1em, 4vw, 2em);
 }
 
 header h1 * {
@@ -60,7 +63,7 @@ header h1 * {
     -webkit-text-fill-color: transparent;
 
     font-weight: 800;
-    font-size: 3em;
+    font-size: clamp(1.3em, 10vw, 3em);
 }
 
 header h1 span:first-child::after,
@@ -71,7 +74,7 @@ header h1 span:last-child::after {
     bottom: 0px;
     left: 0;
     right: 0;
-    height: 10px;
+    height: 10%;
     border-radius: 10px 2px 10px 2px;
 }
 
@@ -83,6 +86,7 @@ header h1 span:last-child::after {
     background-color: var(--primary);
 }
 
+/* ----------------------------------------------------------------- Navigation */
 ul {
     list-style: none;
     display: flex;
@@ -98,6 +102,7 @@ ul {
 ul li {
     position: relative;
     padding: 5px;
+    margin: 0 auto;
     height: auto;
     border-radius: 10px;
     background-image: linear-gradient(120deg, var(--primary) 0%, var(--secondary) 100%);
@@ -117,7 +122,7 @@ ul li a {
     text-decoration: inherit;
     text-align: center;
     line-height: 100%;
-    font-size: 1.5em;
+    font-size: clamp(1em, 3vw, 1.5em);
 }
 
 section:not(section:target) {
@@ -128,6 +133,71 @@ main:target section {
     display: flex;
 }
 
+/* ----------------------------------------------------------------- Headers styling */
+section header,
+section blockquote {
+    position: relative;
+    flex: 0 0 100%;
+    text-align: center;
+    width: 100%;
+}
+
+section header h2 {
+    font-size: clamp(30px, 10vw, 3em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--primary);
+    width: fit-content;
+    height: auto;
+    margin: auto;
+    padding: 5px 20px;
+    outline: 2px solid var(--black);
+    filter: drop-shadow(0 4px 3px rgb(22, 22, 22));
+}
+
+section header h2:hover {
+    animation: banner 0.5s ease forwards;
+}
+
+section:nth-child(2n + 1) header h2 {
+    background-color: var(--secondary);
+}
+
+section header h2::before,
+section header h2::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 25%;
+    width: 20%;
+    background-color: inherit;
+    z-index: -1;
+    box-shadow: inherit;
+    overflow: hidden;
+}
+
+section header h2::before {
+    right: 95%;
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+section header h2::after {
+    left: 95%;
+    clip-path: polygon(0 0, 100% 0, 50% 50%, 100% 100%, 0 100%);
+}
+
+section header p {
+    margin-top: 3vh;
+}
+
+section blockquote {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+/* ----------------------------------------------------------------- Dishes styling */
 section {
     display: flex;
     flex-direction: row;
@@ -137,66 +207,11 @@ section {
     margin-bottom: 10vh;
 }
 
-section header,
-section blockquote {
-    flex: 0 0 100%;
-    text-align: center;
-}
-
-section header h2 {
-    font-size: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: var(--primary);
-    width: fit-content;
-    height: auto;
-    min-width: 7em;
-    margin: auto;
-    padding: 5px;
-    outline: 2px solid var(--black);
-    filter: drop-shadow(0 4px 3px rgb(22, 22, 22));
-}
-
-section:nth-child(2n + 1) header h2 {
-    background-color: var(--secondary);
-}
-
-section header h2::before,
-section h2::before,
-section header h2::after,
-section h2::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    top: 25%;
-    width: 20%;
-    background-color: inherit;
-    z-index: -1;
-    box-shadow: inherit;
-}
-
-section header h2::before,
-section h2::before {
-    right: 95%;
-    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-section header h2::after,
-section h2::after {
-    left: 95%;
-    clip-path: polygon(0 0, 100% 0, 50% 50%, 100% 100%, 0 100%);
-}
-
-section blockquote {
-    margin-top: 5vh;
-}
-
 section article {
-    margin: 5vw;
+    margin: 2vw auto;
+    padding: 2vw;
     position: relative;
-    width: 300px;
+    width: clamp(250px, 30vw, 300px);
     display: grid;
     grid-template-columns: minmax(60%, auto) minmax(30%, max-content);
     grid-template-rows: repeat(2, minmax(min-content, max-content));
@@ -208,11 +223,12 @@ article h3 {
     grid-area: 1 / 1 / 2 / 2;
     overflow-wrap: break-word;
     align-self: center;
-    font-size: 1.5em;
+    font-size: clamp(1.2em, 5vw, 1.5em);
 }
 
 article p {
     grid-area: 2 / 1 / 3 / 3;
+    font-size: clamp(0.8em, 3vw, 1em);
 }
 
 article div {
@@ -222,6 +238,7 @@ article div {
 
 article div {
     font-size: 2em;
+    transition: all 0.5s ease;
 }
 
 article div::before {
@@ -234,4 +251,158 @@ article div::after {
     content: ',~';
     font-size: .6em;
     padding-left: 0.1em;
+}
+
+article div:hover {
+    transform: scale(1.2);
+}
+
+/* ----------------------------------------------------------------- Chef's choice */
+section:nth-child(1) article:nth-child(6),
+section:nth-child(2) article:nth-child(4),
+section:nth-child(3) article:nth-child(2),
+section:nth-child(4) article:nth-child(5),
+section:nth-child(5) article:nth-child(3),
+section:nth-child(6) article:nth-child(3),
+section:nth-child(7) article:nth-child(4),
+section:nth-child(7) article:nth-child(10) {
+    padding-bottom: 75px;
+}
+
+/* code based on codepen: https://codepen.io/shooft/pen/xxREGoV */
+section:nth-child(1) article:nth-child(6)::after,
+section:nth-child(2) article:nth-child(4)::after,
+section:nth-child(3) article:nth-child(2)::after,
+section:nth-child(4) article:nth-child(5)::after,
+section:nth-child(5) article:nth-child(3)::after,
+section:nth-child(6) article:nth-child(3)::after,
+section:nth-child(7) article:nth-child(4)::after,
+section:nth-child(7) article:nth-child(10)::after {
+    content: "Chef's choice";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: min-content;
+    padding: 5px 50px;
+    background-image:
+        radial-gradient(circle at 35% top, transparent 5px, var(--secondary) 5px 8px, transparent 8px),
+        radial-gradient(circle at 50% top, transparent 5px, var(--secondary) 5px 8px, transparent 8px),
+        radial-gradient(circle at 65% top, transparent 5px, var(--secondary) 5px 8px, transparent 8px),
+        radial-gradient(circle at 65% bottom, transparent 5px, var(--secondary) 5px 8px, transparent 8px),
+        radial-gradient(circle at 35% bottom, transparent 5px, var(--secondary) 5px 8px, transparent 8px),
+        radial-gradient(circle at 50% bottom, transparent 5px, var(--secondary) 5px 8px, transparent 8px),
+        radial-gradient(circle at left top, transparent 30px, var(--secondary) 30px 34px, var(--primary) 34px),
+        radial-gradient(circle at right top, transparent 30px, var(--secondary) 30px 34px, var(--primary) 34px),
+        radial-gradient(circle at left bottom, transparent 30px, var(--secondary) 30px 34px, var(--primary) 34px),
+        radial-gradient(circle at right bottom, transparent 30px, var(--secondary) 30px 34px, var(--primary) 34px);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+    background-position: top, top, top, bottom, bottom, bottom, left top, right top, left bottom, right bottom;
+    background-repeat: no-repeat;
+    transform: rotate(-5deg);
+    transition: all 1s ease-in;
+    animation: chef 2s ease infinite;
+}
+
+/* ----------------------------------------------------------------- Animation keyframes */
+@keyframes chef {
+    0% {
+        transform: rotate(-5deg);
+        padding: 5px 60px;
+        filter: saturate(100%);
+    }
+
+    25% {
+        padding: 5px 50px;
+    }
+
+    50% {
+        transform: rotate(5deg);
+        padding: 5px 60px;
+        filter: saturate(200%);
+    }
+
+    75% {
+        padding: 5px 50px;
+    }
+
+    100% {
+        transform: rotate(-5deg);
+        padding: 5px 60px;
+        filter: saturate(100%);
+    }
+}
+
+/* code based on codepen: https://codepen.io/cmykw/pen/GEjXNZ */
+@keyframes banner {
+    0% {
+        transform: scale3d(0.96, 0.96, 1);
+    }
+
+    20% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+
+    40% {
+        transform: scale3d(0.98, 0.98, 1);
+    }
+
+    60% {
+        transform: scale3d(1.05, 1.05, 1);
+    }
+
+    80% {
+        transform: scale3d(1.01, 1.01, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* ----------------------------------------------------------------- Print styling */
+@media print {
+    /* print code here */
+    header h1 {
+        background-image: none;
+        color: white;
+        -webkit-text-fill-color: white;
+    }
+
+    ul {
+        display: none;
+    }
+
+    main {
+        page-break-before: always;
+    }
+
+    section {
+        page-break-before: always;
+    }
+
+    section header {
+        page-break-after: avoid;
+    }
+
+    /*
+        page-break-after: avoid; next page header 
+        page-break-after: always; sets content to a new page
+        widows: 3; op een volgende pagina staan minimaal 3 lijnen
+        orphans: 3; op de pagina ervoor staan minimaal 3 lijnen
+    */
+
+    @page {
+        padding-top: 3.22cm;
+        padding-right: 2.33cm;
+        padding-bottom: 6.44;
+        padding-left: 2.33cm;
+        /* @page :left {}, linker pagina enzo */
+
+        /* page number, no support really
+        counter-increment: page;
+        @bottom-left {
+            content: counter(page)
+        } */
+    }
 }
