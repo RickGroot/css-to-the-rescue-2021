@@ -7,11 +7,26 @@ Bij dit vak ga ik alle hoeken van CSS bekijken. Met pure CSS ga ik een menukaart
 ## Live link
 [Check hier de site](https://rickgroot.github.io/css-to-the-rescue-2021/menu.html)
 
+# Wat heb ik geleerd van dit project
+* overschrijven van variabelen
+* clip-paths
+* responsive design zonder media queries
+* background-gradients
+* puur CSS navigatie
+* :target selector
+* section:not(section:target) om alles weg te halen wat niet is getarget
+* CSS vormen met before en after
+* clamp()
+* vormen maken met CSS
+* keyframes en animaties
+* print stylesheet
+
 # Week 3
 ## Responsiveness
-Deze week ben ik begonnen met responsive design. Hier was ik al wat mee begonnen omdat de gerechten met flex naast elkaar staan, maar alles moet nog in elk formaat kunnen vallen. Om dit te doen heb ik onderzoek gedaan naar verschillende methoden zoals clamp en minmax.
+Deze week ben ik begonnen met responsive design. Hier was ik al wat mee begonnen omdat de gerechten met flex naast elkaar staan, maar alles moet nog in elk formaat kunnen vallen. Om dit te doen heb ik onderzoek gedaan naar verschillende methoden zoals clamp en minmax. het responsive maken van de website was niet al te moeilijk omdat ik de layout niet al te moeilijk had gemaakt. Evengoed heb ik er veel van geleerd om het zonder mediia queries te doen. Vooral de fonts aanpassen naar een passende en leesbare oplossing was hier de uitdaging.
 
 ## Print stylesheet
+Ook heb ik een print-stylesheet gemaakt. Dit is een moeilijker onderwerp als ik had verwacht, omdat de print stylesheet alles anders aanpakt en heel erg browser gerelateerd is. Niet alle eenheden werken evengoed en sommige methoden zoals grids werken ook vaak niet. Hierdoor moest ik veel code aanpassen om het een mooie pagina te maken. De navigatie moest ik eerst weghalen, en daarmee ook ervoor zorgen dat alle content zichtbaar is doormiddel van de target selector. Daarna ben ik met layout aan de gang gegaan en heb ik alles op de goede plek gezet. De header en margins waren lastig bij deze stylesheet, omdat de kleuren vaak niet goed mee werden genomen. Na heel veel experimenteren is het mij toch gelukt om een goede print stylesheet in elkaar te zetten.
 
 # Week 2
 ## Interaction
