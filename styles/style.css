@@ -56,6 +56,10 @@ body>header p {
     font-size: clamp(1em, 4vw, 2em);
 }
 
+body>p {
+    display: none;
+}
+
 header h1 * {
     background-image: url(../img/chalk.jpg);
     background-repeat: repeat;
@@ -383,6 +387,13 @@ section:nth-child(7) article:nth-child(10)::after {
         background-color: var(--black);
     }
 
+    body>p {
+        display: block;
+        width: 40%;
+        margin: 10% 30%;
+        color: var(--black);
+    }
+
     header h1 * {
         position: relative;
         background-image: none;
@@ -503,28 +514,10 @@ section:nth-child(7) article:nth-child(10)::after {
         animation: none;
     }
 
-    /*
-        page-break-after: avoid; next page header 
-        page-break-after: always; sets content to a new page
-        widows: 3; op een volgende pagina staan minimaal 3 lijnen
-        orphans: 3; op de pagina ervoor staan minimaal 3 lijnen
-    */
-
     /* -------------------------------------------------- Page specific styling */
     @page {
-        /* margin-top: 3.22cm;
-        margin-right: 2.33cm;
-        margin-bottom: 6.44cm;
-        margin-left: 2.33cm; */
         margin: 0;
-
-        background-color: var(--black);
-        /* @page :left {}, linker pagina enzo */
-
-        /* page number, no support really
-        counter-increment: page;
-        @bottom-left {
-            content: counter(page)
-        } */
+        background: var(--black);
+        background-size: 100%;
     }
 }
