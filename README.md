@@ -43,7 +43,7 @@ Ook ben ik banners gaan maken voor de categorieën. Door de banners heeft de men
 # Week 1
 ## Kennismaking
 | Deze week ben ik begonnen met een kennismaking opdracht. Hierbij moest het team onderzoek doen naar een specifieke techniek/onderwerp. Mijn team had als onderwerp *effecten*. Hieronder vallen bijvoorbeeld blend-modes, clip-paths en filters. Binnen deze onderwerpen ben ik vooral gaan kijken naar de blend-modes en filters. | ![kennismaking](https://github.com/rickgroot/css-to-the-rescue-2021/blob/main/assets/kennismaking.jpg?raw=true) |
-|---|---|
+|:---|---|
 
 [Live preview van kennismaking](https://rickgroot.github.io/css-to-the-rescue-2021/docs/kennismaking/test.html)
 
